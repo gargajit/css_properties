@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+    <style>
+        body {
+            font-size: x-large;
+            background-color: #484a4b15;
+        }
+        #propertyName {
+            color: blueviolet;
+        }
+        li {
+            margin-bottom: 2rem;
+        }
+        #secondary {
+            color: #888;
+            font-size: 0.8em;
+        }
+        #one {
+            /* offset-x | offset-y | blur-radius | color */
+            text-shadow: 2px 5px 2px pink;
+        }
+        #two {
+            /* offset-x | offset-y | blur-radius | color */
+            text-shadow: 1px 0px 10px #FC0;
+        }
+        #three {
+            /* offset-x | offset-y | color */
+            text-shadow: 0px -5px #558ABB;
+        }
+        #four {
+            /* offset-x | offset-y
+            /* Use defaults for color and blur-radius */
+            text-shadow: 5px 12px 10px;
+        }
+
+        #five {
+            text-decoration: none;
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS: <span id="propertyName">Text Decoration</span></h1>
+    <p>Let's see some Demo:</p>
+    <ul>
+        <li><span id="secondary">[text-shadow: 1px 1px 2px pink]</span> Find <span  id="one">joy in the journey</span>, not just the destination.</li>
+        <li><span id="secondary">[text-shadow: 1px 0px 10px #FC0]</span> <span id="two">Small steps every day</span> lead to big changes.</li>
+        <li><span id="secondary">[text-shadow: 0px -5px #558ABB]</span> Your <span id="three">attitude</span> determines your direction.</li>
+        <li><span id="secondary">[text-shadow: 5px 12px]</span> Gratitude turns <span id="four">what we have into enough.</span></li>
+        <li><span id="secondary">[text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue]</span> Stay Healthy! <a href="https://gargajit.github.io/bmi/" id="five">Calculate BMI now..</a> </li>
+    </ul>
+</body>
+</html>
