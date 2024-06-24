@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        body {
+            font-size: 1.3rem;
+            background-color: #484a4b15;
+        }
+        #propertyName {
+            color: blueviolet;
+        }
+        #toHighlight {
+            text-decoration: blueviolet wavy underline;
+        }
+        #drawOutline {
+            border: 1px solid;
+            padding: 10px;
+            margin: 50px;
+            outline: #dec3e6 solid 20px;
+        }
+        #content-structure {
+            display:inline-flex;
+            border: 1px solid;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            width: 200px;
+            justify-content: center;
+        }
+        #border-structure {
+            display:inline-flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid;
+            margin: 20px;
+            background-color: lightgray;
+            width: 400px;
+        }
+        #outline-structure {
+            display:inline-flex;
+            flex-direction: column;
+            align-items: center;
+            
+            border: 1px dotted green;
+            padding: 20px;
+            background-color: rgb(200, 229, 200);
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS: <span id="propertyName">Outline</span></h1>
+    <p>Let's see some Demo:</p>
+
+    <p id="drawOutline">
+        An outline is a line that is drawn around elements, <span id="toHighlight"><span style="text-transform: uppercase;">outside</span> the element's border</span>.
+    </p>
+    
+    <p>So it goes like this:</p>
+    <div id="outline-structure">
+        Outline
+        <div id="border-structure">Border
+            <div id="content-structure">Content</div>
+        </div>
+    </div>
+    
+</body>
+</html>
