@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        body {
+            font-size: 1.3rem;
+            background-color: #484a4b15;
+        }
+        #propertyName {
+            color: blueviolet;
+        }
+        #secondary {
+            color: #888;
+            font-size: 1em;
+        }
+        div {
+            margin-bottom: 40px;
+        }
+        #demo1 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 8px 10px;
+        }
+        #demo2 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 0px 10px gray;
+        }
+        #demo3 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 8px -10px #ffdd00;
+        }
+        #demo4 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 0px 0px 40px wheat;
+        }
+        #demo5 {
+            margin-top: 70px;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 0px 0px 0px 30px palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS: <span id="propertyName">Box Shadow</span></h1>
+    <p>Let's see some Demo:</p>
+
+    <div id="demo1">
+        <p><span id="secondary">[box-shadow: 8px 10px]</span></p>
+    </div>
+
+    <div id="demo2">
+        <p><span id="secondary">[box-shadow: 0px 10px gray]</span></p>
+    </div>
+
+    <div id="demo3">
+        <p><span id="secondary">[box-shadow: 8px -10px #ffdd00]</span></p>
+    </div>
+
+    <div id="demo4">
+        <p><span id="secondary">[box-shadow: 0px 0px 40px wheat]</span></p>
+    </div>
+
+    <div id="demo5">
+        <p><span id="secondary">[box-shadow: 0px 0px 40px wheat]</span></p>
+    </div>
+    
+</body>
+</html>
