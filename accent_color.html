@@ -8,14 +8,38 @@
         input[type=checkbox] {
             accent-color: red;
         }
+        input[type=radio] {
+            accent-color: green;
+        }
+        input[type=range] {
+            accent-color: purple;
+        }
+        progress {
+            accent-color: orange;
+        }
     </style>
 </head>
 <body>
     <h1>The accent-color property</h1>
+
     <h3>Checkboxes:</h3>
-    <input type="checkbox" name="option1" id="car" checked>
+    <input type="checkbox" name="option1" id="option1" value="car" checked>
     <label for="option1">Get Car</label><br>
-    <input type="checkbox" name="option2" id="bike">
+    <input type="checkbox" name="option2" id="option2" value="insurance" checked>
     <label for="option2">Get Insurance</label><br>
+
+    <h3>Radiobuttons:</h3>
+    <input type="radio" name="framework1" id="framework1" value="rails">
+    <label for="framework1">Ruby on Rails</label>
+    <input type="radio" name="framework2" id="framework2" value="nodejs" checked>
+    <label for="framework1">nodeJS</label>
+
+    <h3>Range:</h3>
+    <label for="volume">Volume:</label>
+    <input type="range" name="volume" id="volume" min="0" max="100">
+
+    <h3>Progress Bar:</h3>
+    <label for="progress_bar">Downloading:</label>
+    <progress id="progress_bar" value="65" max="100">65%</progress>
 </body>
 </html>
