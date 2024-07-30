@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: none;
+            border-radius: 50%;
+            background-color: cornflowerblue;
+            position: relative;
+            animation: rollit 6s infinite;
+        }
+        @keyframes rollit {
+            from { left: 0px; top: 0px; }
+            to { left: 500px; top: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>The animation Property</h1>
+    <p>
+        Move an element from 0px to 500px left and from 0px to 300px right. 
+        The animation lasts for 6 seconds. <br /> 
+        It then starts over again, and go on forever (infinite).
+    </p>
+    <div></div>
+</body>
+</html>
